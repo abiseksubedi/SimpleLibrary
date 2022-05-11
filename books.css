@@ -1,0 +1,70 @@
+.book-welcome-section{
+    margin: 3em auto;
+    /* width: 100vw; */
+    height: 100vh;
+    display: grid;
+    text-align: center;
+    align-items: center; 
+    background-color: antiquewhite;
+    border-bottom-right-radius: 10em ;
+}
+.book-welcome-section strong{
+    transform: scale(2);
+    position: relative;
+    top: 10em;
+    text-transform: uppercase;
+
+}
+.cards{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;
+}
+.card{
+    text-align: center;
+    background-color: bisque;
+    border-radius: 1em;
+    width: fit-content;
+    border:  2px solid beige;
+    padding: 1em;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+.showcase:nth-child(even){
+    position: relative;
+    top: -2em;
+}
+.showcase:nth-child(odd){
+    position: relative;
+    top: 2em;
+}
+.showcase .card:hover{
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+.name{
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: larger;
+}
+@media  (max-width: 756px) {
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px){
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    .card{
+        box-sizing: border-box;
+        margin: 20px;
+        border: 5px solid white;
+    }
+    .book-welcome-section{
+        margin: 1em auto;
+    }
+}

@@ -1,0 +1,12 @@
+form{
+    margin-top: 3em;
+    padding: 3em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr 2fr);
+    background-color: antiquewhite;
+}
+
+input{
+    width: fit-content;
+    height: 2em;
+}
